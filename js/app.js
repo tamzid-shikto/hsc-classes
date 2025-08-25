@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         subjectDetailView.innerHTML = '<header><h1>Loading...</h1></header>';
 
         try {
-            const response = await fetch(`./db/${subjectId}.json_out-from-agent.json`);
+            const response = await fetch(`./db/${subjectId}_out-from-agent.json`);
             if (!response.ok) throw new Error(`Data for "${subjectId}" not found.`);
             const subjectData = await response.json();
 
